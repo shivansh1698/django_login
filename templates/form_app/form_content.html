@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Form Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <form method="post">
+                <div>
+                    {{form.as_p}}
+                </div>
+                {% csrf_token %}
+                <div>
+                    <input type="submit" class = "btn btn-primary" value="Enter">
+                    <a href="{% url 'form_app:index' %}" class = "btn btn-primary">Home</a>
+                </div>
+                
+            </form>
+            
+        </div>
+    </body>
+</html>

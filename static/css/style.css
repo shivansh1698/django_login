@@ -1,0 +1,12 @@
+#success{
+    color:green;
+    font-size: 40px
+}
+#fail{
+    color:red;
+    font-size: 40px
+}
+
+table{
+    border: black 2px solid
+}

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            #success{
+                color:green;
+                font-size: 40px
+            }
+            #fail{
+                color:red;
+                font-size: 40px
+            }
+
+            table,td,tr,th,thead{
+                border: black 2px solid
+            }
+    
+        </style>
+    </head>
+    <body>
+        {% if records %}
+            <h1 id ="success">User Records</h1>
+            <table>
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </thead>
+                {% for i in records %}
+                    <tr>
+                        <td>{{i.FirstName}}</td>
+                        <td>{{i.LastName}}</td>
+                        <td>{{i.Email}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p id ="fail">No Records found</p>
+        {% endif %}
+
+    </body>
+
+</html>

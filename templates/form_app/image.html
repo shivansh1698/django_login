@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h2>select the image below and save</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ image_form.as_p}}
+            <input type="submit" class = "btn btn-primary" value="Save">
+        </form>
+    </body>
+</html>

@@ -11,6 +11,8 @@ urlpatterns = [
     url(r'^log/',views.form_log,name='form_log'),
     url(r'^sign/',views.form_sign,name='form_sign'),
     url(r'^data/',views.read_data,name='read_data'),
-    url(r'^user_logout',views.user_logout,name = 'user_logout')
-
+    url(r'^user_logout',views.user_logout,name = 'user_logout'),
+    url(r'^user_text/',views.save_text,name = 'user_text'),
+    url(r'^success/',views.success_save,name='success_save'),
+    url(r'^image/',views.image,name='image'),
 ]

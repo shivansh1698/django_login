@@ -28,6 +28,8 @@ SECRET_KEY = 'ir_0++)ozfb^u#p%@wr)070-5-b8vwi(+wbs9g$u+*9&uf$7!@'
 DEBUG = True
 
 ALLOWED_HOSTS = ['shivansh1698.pythonanywhere.com',
+                '127.0.0.1',
+                'localhost',
 ]
 
 
